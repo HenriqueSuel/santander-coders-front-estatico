@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tabelas</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lilita+One&display=swap" rel="stylesheet">
+
+
+    <style>
+
+      body {
+        font-family: 'Lilita One', cursive;
+      }
+
+
+        table {
+            border-collapse: collapse;
+        }
+
+        th,td {
+            border: 1px solid black;
+            padding: 10px;
+           /*  border-color: black;
+            border-style: solid;
+            border-width: 1px; */
+        }
+
+        .not-border {
+            border: none;
+        }
+
+        .color-red {
+            background: red;
+        }
+
+    </style>
+  </head>
+  <body>
+
+
+
+
+    <!--  <table></table>
+    <tr></tr>
+    <th></th>
+    <td></td>
+    <thead></thead>
+    <tbody></tbody>
+
+    <tfoot></tfoot>
+
+    <caption></caption>
+
+    <colgroup></colgroup>
+
+    <col> -->
+
+<table>
+    <tr>
+        <th>Nome</th>
+        <td>Henrique</td>
+        <td>Suel</td>
+        <td>Raniel</td>
+    </tr>
+    <tr>
+        <th rowspan="2">Telefone</th>
+        <td>(11) 9 9999-9999</td>
+        <td rowspan="2">(11) 8 9999-9999</td>
+        <td rowspan="2">(11) 7 9999-9999</td>
+    </tr>
+
+    <tr>
+        <td>(11) 6 99999-9999</td>
+    </tr>
+
+</table>
+    
+
+
+
+
+    <table>
+        <colgroup>
+            <col span="1"  />
+            <col span="1" class="color-red"  />
+        </colgroup>
+        <caption>Tabela de itens</caption>
+      <thead>
+        <tr>
+            <th class="not-border"></th>
+         <!--  <th colspan="2">item</th> -->
+          <th>Valor</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr>
+          <td>Macbook</td>
+         <!--  <td>Apple</td> -->
+          <td>R$ 10.0000</td>
+        </tr>
+        <tr>
+          <td>Monitor</td>
+          <!-- <td>Dell</td> -->
+          <td>R$ 500.00</td>
+        </tr>
+
+        <tr>
+          <td>Cabo</td>
+         <!--  <td>Dell</td> -->
+          <td>R$ 10.00</td>
+        </tr>
+
+        <tfoot>
+            <tr>
+               <!--  <td colspan="2">Total</td> -->
+                <td>Total</td>
+                <td>
+
+                    <butto class="">Henrique</button>
+                </td>
+            </tr>
+        </tfoot>
+      </tbody>
+    </table>
+
+
+
+
+  </body>
+</html>

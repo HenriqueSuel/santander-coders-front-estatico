@@ -1,0 +1,9 @@
+.teste {
+    /*  list-style-image: url("http://squids.com.br/icons/folder.png"); */
+    /* list-style: url("http://squids.com.br/icons/folder.png"); */
+
+    list-style: none;
+
+    color: blue;
+
+}
