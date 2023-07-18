@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulario</title>
+
+    <style>
+      .margin-bottom {
+        margin-bottom: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <form>
+        <fieldset>
+          <legend>Dados Pessoais</legend>
+          <div class="margin-bottom">
+            <label for="name">Nome:</label>
+            <input id="name" type="text" placeholder="nome" name="nome" />
+          </div>
+
+          <div class="margin-bottom">
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" />
+          </div>
+
+          <div class="margin-bottom">
+            <label for="password">Senha:</label>
+            <input type="password" name="password" id="password" />
+          </div>
+
+          <div class="margin-bottom">
+            <label for="">Cidade</label>
+            <select id="cidade" name="cidade">
+              <option disabled selected>Selecione a cidade</option>
+              <optgroup label="São Paulo">
+                <option value="SA">Santo André</option>
+                <option value="SB">São Bernando</option>
+                <option value="SC">São Caetano</option>
+              </optgroup>
+              <optgroup label="Parana">
+                <option>Maringá</option>
+                <option>Londrina</option>
+              </optgroup>
+            </select>
+          </div>
+
+          <div class="margin-bottom">
+            <label for="comentario">Comentário:</label>
+            <textarea
+              style="resize: none"
+              name="comentario"
+              id="comentario"
+              cols="30"
+              rows="7"
+              maxlength="200"
+              minlength="0"
+            ></textarea>
+
+            <input type="checkbox" name="aceito-termos" id="aceito-termos" />
+            <label for="aceito-termos"> Aceito os termos e condições </label>
+          </div>
+        </fieldset>
+
+        <fieldset style="margin-top: 15px">
+          <div class="margin-bottom">
+            <label for="cor">Cor favorita</label>
+            <input type="color" name="cor" id="cor" />
+          </div>
+
+          <div class="margin-bottom">
+            <label for="">Nascimento</label>
+            <input type="date" name="" id="" />
+          </div>
+
+          <div class="margin-bottom">
+            <label for="numero">Numero da sorte</label>
+            <input type="number" name="numero" id="" />
+          </div>
+
+          <label for="cm">
+            <input type="radio" name="tipo-comida" id="cm" />
+            Café da manhã
+          </label>
+          <label for="AL">
+            <input type="radio" name="tipo-comida" id="AL" />
+            Almoço
+          </label>
+          <label for="JT">
+            <input type="radio" name="tipo-comida" id="JT" />
+            Janta
+          </label>
+        </fieldset>
+
+        <button>Enviar</button>
+      </form>
+    </main>
+  </body>
+</html>

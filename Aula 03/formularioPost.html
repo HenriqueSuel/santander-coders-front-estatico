@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Post</title>
+
+    <link rel="stylesheet" href="./style.css" />
+
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      main {
+        border: 1px solid black;
+        padding: 20px;
+        width: 500px;
+        margin: auto;
+      }
+
+      input {
+        width: 100%;
+        margin: 10px 0;
+        padding: 10px 20px;
+      }
+
+      .text-center {
+        text-align: center;
+      }
+
+      .button-legal {
+        background-color: pink;
+        border: none;
+        border-radius: 10px;
+        padding: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- // Post => Criando
+    // Get => Buscando
+   
+   
+    // PUT => Modificar
+    // Delete => Deletar
+    // Patch => Modificar apenas uma propriedade -->
+    <main>
+      <form id="meuFormulario">
+        <div class="color">
+          <label for="email">Email</label>
+          <input type="text" name="email" id="email" />
+        </div>
+
+        <div>
+          <label for="senha">Senha</label>
+          <input type="password" name="senha" id="senha" />
+        </div>
+
+        <div class="text-center">
+          <button class="button-legal" type="submit">Enviar</button>
+        </div>
+      </form>
+
+      <script>
+        document
+          .getElementById("meuFormulario")
+          .addEventListener("submit", function (event) {
+            event.preventDefault();
+            var email = document.getElementById("email").value;
+            var password = document.getElementById("senha").value;
+
+            var dados = {
+              email: email,
+              password: password,
+            };
+
+            const data = JSON.stringify(dados);
+
+        
+            //  localStorage.setItem("dadosFormualrio", data)
+
+            console.log(data.password)
+            
+            const data2 = JSON.parse(data)
+            
+            console.log(data2.password)
+          });
+      </script>
+    </main>
+  </body>
+</html>
