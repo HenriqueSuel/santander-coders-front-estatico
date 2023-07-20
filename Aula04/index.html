@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title></title>
+  </head>
+  <body>
+    <button id="btnEnviar" aria-label="Botão para envio de formulário">
+      Enviar
+    </button>
+
+    <script>
+      function trocarAriaLabel() {
+        const botaoDeEnvio = document.getElementById("btnEnviar");
+        if (
+          botaoDeEnvio.getAttribute("aria-label") ===
+          "Botão para envio de formulário"
+        ) {
+          botaoDeEnvio.setAttribute(
+            "aria-label",
+            "Botao para reenvio de formulario"
+          );
+        }
+      }
+
+      trocarAriaLabel();
+
+      // Na primeira renderização o aria-label deve ser "Botao para reenvio de formulario"
+
+      // adicionar listener para que toda vez que o botao seja
+      //   executado ele faça a chamada do trocarAriaLabel() com suas devidas
+      // normalizações
+      // Evento de click
+      
+    </script>
+  </body>
+</html>
