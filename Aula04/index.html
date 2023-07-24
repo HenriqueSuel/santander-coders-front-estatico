@@ -1,36 +1,77 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <title></title>
-  </head>
-  <body>
-    <button id="btnEnviar" aria-label="Botão para envio de formulário">
-      Enviar
-    </button>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
 
-    <script>
-      function trocarAriaLabel() {
-        const botaoDeEnvio = document.getElementById("btnEnviar");
-        if (
-          botaoDeEnvio.getAttribute("aria-label") ===
-          "Botão para envio de formulário"
-        ) {
-          botaoDeEnvio.setAttribute(
-            "aria-label",
-            "Botao para reenvio de formulario"
-          );
-        }
+    <style>
+      tbody tr:nth-child(n + 2) {
+        background: yellow;
       }
 
-      trocarAriaLabel();
+      /*   tr:last-child {
+        background: yellow;
+      } */
 
-      // Na primeira renderização o aria-label deve ser "Botao para reenvio de formulario"
+      body {
+        background: black;
+      }
+      .enviar {
+        background: blue;
+        color: white;
+      }
 
-      // adicionar listener para que toda vez que o botao seja
-      //   executado ele faça a chamada do trocarAriaLabel() com suas devidas
-      // normalizações
-      // Evento de click
-      
-    </script>
+      .enviar:hover {
+        background: white ;
+        color:blue;
+      }
+
+
+    </style>
+  </head>
+  <body>
+    <main>
+      <button class="enviar">Enviar</button>
+      <!--   <table>
+        <tr>
+          <th>Nome</th>
+          <th>Idade</th>
+          <th>Cidade</th>
+        </tr>
+
+        <tr>
+          <td>Henrique</td>
+          <td>20</td>
+          <td>São Paulo</td>
+        </tr>
+        <tr>
+          <td>João</td>
+          <td>21</td>
+          <td>Rio de Janeiro</td>
+        </tr>
+        <tr>
+          <td>Ana</td>
+          <td>28</td>
+          <td>Porto Alegre</td>
+        </tr>
+        <tr>
+          <td>Ana</td>
+          <td>28</td>
+          <td>Porto Alegre</td>
+        </tr>
+        <tr>
+          <td>Ana</td>
+          <td>28</td>
+          <td>Porto Alegre</td>
+        </tr>
+        <tr>
+          <td>Ana</td>
+          <td>28</td>
+          <td>Porto Alegre</td>
+        </tr>
+      </table> -->
+    </main>
   </body>
 </html>

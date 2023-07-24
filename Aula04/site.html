@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Meu Site</title>
+
+    <style>
+        :root {
+            --cor-fundo: #f10909;
+        }
+
+
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        font-family: Arial, sans-serif;
+      }
+
+      main {
+        margin-top: 150px;
+      }
+
+      header {
+        top: 0px;
+        width: 100%;
+        position: fixed;
+        padding-top: 20px;
+        background-color: var(--cor-fundo);
+        text-align: center;
+        z-index: 1;
+      }
+
+      nav {
+        background-color: #ddd;
+        padding: 20px;
+        margin-top: 20px;
+      }
+
+      a:hover {
+        background-color: #f1f1f1;
+      }
+
+      a {
+        padding: 5px;
+        text-decoration: none;
+        color: #333;
+      }
+
+      section {
+        position: relative;
+        width: 80%;
+        margin: 20px auto;
+      }
+
+      article {
+        margin-top: 20px;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        padding: 10px;
+      }
+
+      article p {
+        margin-top: 20px;
+      }
+
+      footer {
+        background-color: #f1f1f1;
+        padding: 20px;
+        text-align: center;
+      }
+
+      figcaption {
+        /*   visibility: hidden; */
+        display: none;
+      }
+
+      html {
+        scroll-padding-top: 150px;
+        scroll-behavior: smooth;
+      }
+
+      figure {
+        top:48px;
+        right: 0;
+        position: absolute;
+      }
+
+      img {
+        width: 64px;
+      }
+
+
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1 class="title">Meu Site</h1>
+      <nav>
+        <a href="#react">React</a>
+        <a href="#angular">Angular</a>
+        <a href="#vue">VueJs</a>
+      </nav>
+    </header>
+
+    <main>
+      <section id="react">
+        <h2>React</h2>
+
+        <article>
+          <h3>Como usar o React</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe
+            molestiae dicta, quidem nostrum nesciunt maiores, excepturi ipsum
+            dignissimos fugiat, odio inventore magnam tempore quia? Cumque eum
+            fugiat maiores quas qui!
+          </p>
+        </article>
+        <figure>
+          <img src="./assets/react.png" alt="Logo do react" />
+          <figcaption>Logo do react lindo de bonito</figcaption>
+        </figure>
+      </section>
+
+      <section id="angular">
+        <h2>Angular</h2>
+
+        <article>
+          <h3>Como usar o Angular</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe
+            molestiae dicta, quidem nostrum nesciunt maiores, excepturi ipsum
+            dignissimos fugiat, odio inventore magnam tempore quia? Cumque eum
+            fugiat maiores quas qui!
+          </p>
+        </article>
+
+        <figure>
+          <img src="./assets/angular.jpg" alt="Logo do Angular" />
+          <figcaption>Logo do Angular lindo de bonito</figcaption>
+        </figure>
+      </section>
+
+      <section id="vue">
+        <h2>VueJs</h2>
+
+        <article>
+          <h3>Como usar o VueJs</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe
+            molestiae dicta, quidem nostrum nesciunt maiores, excepturi ipsum
+            dignissimos fugiat, odio inventore magnam tempore quia? Cumque eum
+            fugiat maiores quas qui!
+          </p>
+        </article>
+
+        <figure>
+          <img src="./assets/vue.jpg" alt="Logo do Vue" />
+          <figcaption>Logo do vue lindo de bonito</figcaption>
+        </figure>
+      </section>
+    </main>
+
+    <footer>
+      <p>© 2023 Meu Site. Todos os direitos reservados.</p>
+    </footer>
+  </body>
+</html>
