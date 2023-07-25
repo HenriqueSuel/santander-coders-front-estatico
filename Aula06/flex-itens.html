@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      body {
+        font-family: "Roboto", Arial;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      .flex {
+        flex: 3 2 300px;
+        /*  flex-grow: 3;
+        flex-shrink: 2;
+        flex-basis: 300px; */
+        /* Flex-grow, flew-shrink, flex-basic*/
+      }
+
+      .display-flex {
+        display: flex;
+      }
+
+      .item {
+        background: rgb(0, 162, 255);
+        text-align: center;
+        margin: 5px;
+      }
+
+      .container {
+        border: 1px solid;
+        max-width: 400px;
+        margin: 25px auto;
+      }
+
+      .grow-0 {
+        flex-grow: 0;
+      }
+      .grow-1 {
+        flex-grow: 1;
+      }
+      .grow-2 {
+        flex-grow: 2;
+      }
+
+      .column {
+        flex-direction: column;
+      }
+
+      .basis {
+        flex-basis: 10px;
+      }
+
+      .shrink {
+        flex-shrink: 1;
+      }
+
+      .shrink-2 {
+        flex-shrink: 2;
+      }
+
+      .order-1 {
+        order: 1;
+      }
+      .order-2 {
+        order: 2;
+      }
+      .order-3 {
+        order: 3;
+      }
+      .order-4 {
+        order: 4;
+      }
+
+      .align-self {
+        align-self: center;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Flex-Grow</h1>
+    <section class="container display-flex column" style="height: 300px">
+      <div class="item grow-1">item 01</div>
+      <div class="item grow-2">item 02</div>
+      <div class="item grow-1">item 03</div>
+      <div class="item grow-1">item 04</div>
+    </section>
+    <h1>Flex-Grow</h1>
+    <section class="container display-flex">
+      <div class="item grow-1">item 01</div>
+      <div class="item grow-2">item 02</div>
+      <div class="item grow-1">item 03</div>
+      <div class="item grow-1">item 04</div>
+    </section>
+
+    <!-- Indica o tamanho inicial do flex item antes da distribuição do espaço restante. -->
+    <h1>Flex basis</h1>
+    <section class="container display-flex">
+      <div class="item grow-1 basic">item 01</div>
+      <div class="item grow-1 basic">item 02</div>
+      <div class="item grow-1 basic">item 03</div>
+      <div class="item grow-1 basic">item 04</div>
+    </section>
+
+    <h1>flex-shrink</h1>
+    <section class="container display-flex">
+      <div class="item grow-1 shrink">item 01 as</div>
+      <div class="item grow-1 shrink">item 02 as</div>
+      <div class="item grow-1 shrink-2">item 03 as</div>
+      <div class="item grow-1 shrink">item 04 as</div>
+    </section>
+
+    <h1>Order</h1>
+    <section class="container display-flex">
+      <div class="item grow-1">item 03</div>
+      <div class="item grow-1 order-1">item 01</div>
+      <div class="item grow-1">item 04</div>
+      <div class="item grow-1">item 02</div>
+    </section>
+
+    <h1>Align-self</h1>
+    <section class="container display-flex row" style="height: 200px">
+      <div class="item">item 03</div>
+      <div class="item align-self">item 01</div>
+      <div class="item">item 04</div>
+      <div class="item">item 02</div>
+    </section>
+  </body>
+</html>

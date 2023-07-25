@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      .flex {
+        display: flex;
+      }
+
+      .item {
+        flex: 1;
+        background: rgb(0, 162, 255);
+        text-align: center;
+        margin: 5px;
+      }
+
+
+      body {
+        font-family: "Roboto", Arial;
+      }
+
+      .container {
+        border: 1px solid;
+        max-width: 400px;
+        height: 200px;
+        margin: 25px auto;
+      }
+
+      .column {
+        flex-direction: column;
+      }
+
+      .row {
+        flex-direction: row;
+      }
+
+      .row-or-column-reverse {
+        flex-direction: column-reverse;
+        /* flex-direction: column-reverse; */
+      }
+
+      .wrap {
+        flex-wrap: wrap;
+      }
+
+      .nowrap {
+        flex-wrap: nowrap;
+      }
+
+      .justify-content {
+        justify-content: center;
+      }
+
+      .align-item {
+        align-items: center;
+      }
+
+      .align-content {
+        align-content: center;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Display: block</h1>
+    <section class="container">
+      <div class="item">item 01</div>
+      <div class="item">item 02</div>
+      <div class="item">item 03</div>
+      <div class="item">item 04</div>
+    </section>
+
+    <h1>Display: Flex</h1>
+    <section class="container flex">
+      <div class="item">item 01</div>
+      <div class="item">item 02</div>
+      <div class="item">item 03</div>
+      <div class="item">item 04</div>
+    </section>
+
+    <h1>flex-direction: row</h1>
+    <section class="container flex row">
+      <div class="item">item 01</div>
+      <div class="item">item 02</div>
+      <div class="item">item 03</div>
+      <div class="item">item 04</div>
+    </section>
+
+    <h1>flex-direction: column</h1>
+    <section class="container flex column">
+      <div class="item">item 01</div>
+      <div class="item">item 02</div>
+      <div class="item">item 03</div>
+      <div class="item">item 04</div>
+    </section>
+
+    <h1>flex-direction: row-reverse ou column reverse</h1>
+    <section class="container flex row-or-column-reverse">
+      <div class="item">item 01</div>
+      <div class="item">item 02</div>
+      <div class="item">item 03</div>
+      <div class="item">item 04</div>
+    </section>
+
+    <h1>Flex wrap</h1>
+    <section class="container flex wrap">
+      <div class="item flex">item adadasdasdasdasasdasda 01</div>
+      <div class="item">item 02</div>
+      <div class="item">item 03</div>
+      <div class="item">item 03</div>
+      <div class="item">item 03</div>
+      <div class="item">item 03</div>
+      <div class="item">item 03</div>
+    </section>
+
+    <h1>justify-content</h1>
+    <section class="container flex column justify-content">
+      <div class="item">item 01</div>
+      <div class="item">item 02</div>
+      <div class="item">item 03</div>
+    </section>
+
+    <h1>align-item</h1>
+    <section class="container flex row align-item wrap">
+      <div class="item">item 01 adsdasdadasddasda</div>
+      <div class="item">item 02</div>
+      <div class="item">item 03</div>
+    </section>
+    <h1>align-content</h1>
+    <section class="container flex row align-content wrap" style="height: 200px;">
+      <div class="item">item 01 dajshda dasd asd asdass asdfsafas fasdfsadfsa</div>
+      <div class="item">item 02</div>
+      <div class="item">item 03</div>
+      <div class="item">item 04</div>
+      <div class="item">item 05</div>
+      <div class="item">item 06</div>
+      <div class="item">item 07</div>
+      <div class="item">item 08</div>
+      <div class="item">item 09</div>
+      <div class="item">item 10</div>
+      <div class="item">item 11</div>
+      <div class="item">item 12</div>
+    </section>
+
+    
+  </body>
+</html>

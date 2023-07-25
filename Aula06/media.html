@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Media</title>
+
+    <style>
+
+        @media print { 
+            button {
+                padding: 20px;
+                background: black;
+                color: white;
+            }
+        }
+
+
+      @media (min-width: 0) and (max-width: 769px) {
+        button {
+          background: pink;
+          color: white;
+        }
+      }
+
+      @media (min-width: 768px) {
+        button {
+          background: green;
+          color: white;
+        }
+      }
+
+      @media (min-width: 992px) {
+        button {
+          background: red;
+          color: white;
+        }
+      }
+
+      @media (min-width: 1200px) {
+        button {
+          background: yellow;
+          color: white;
+        }
+      }
+      @media (min-width: 1400px) {
+        button {
+          background: orange;
+          color: white;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <button>Enviar</button>
+    </main>
+  </body>
+</html>

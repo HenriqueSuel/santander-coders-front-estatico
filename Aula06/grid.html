@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        font-family: "Roboto", Arial;
+      }
+
+      .item {
+        margin: 5px;
+        background: rgb(71, 166, 255);
+        text-align: center;
+        font-size: 1.5em;
+      }
+
+      .display-grid {
+        display: grid;
+        max-width: 400px;
+        margin: 0 auto;
+        border: 1px solid #ccc;
+        margin-bottom: 20px;
+      }
+
+      .grid-template-column {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .grid {
+        grid: 100px 100px / 1fr 1fr;
+      }
+
+      .grid-template-rows {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 50px;
+      }
+
+      .logo {
+        grid-area: logo;
+      }
+
+      .nav {
+        grid-area: nav;
+      }
+
+      .content {
+        grid-area: content;
+      }
+
+      .footer {
+        grid-area: footer;
+      }
+
+      .sidebar {
+        grid-area: sidebar;
+      }
+
+      .advert {
+        grid-area: advert;
+      }
+
+      .grid-template-areas {
+        /*    grid-template-areas:
+          "logo    nav        nav"
+          "sidebar content    advert"
+          "sidebar footer     footer";
+ */
+        gap: 10px 20px;
+        /*  column-gap: 20px; */
+        /*       row-gap: 20px; */
+        grid-template:
+          "logo    nav        nav" 50px
+          "sidebar content    advert" 150px
+          "sidebar footer     footer" 50px / 50px 2fr 150px;
+      }
+
+      .grid-column {
+        grid-column: 2/3;
+      }
+
+      .grid-row { 
+        grid-row: ;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Grid</h1>
+    <div class="display-grid">
+      <div class="item">Item 01</div>
+      <div class="item">Item 02</div>
+      <div class="item">Item 03</div>
+    </div>
+
+    <h1>grid-template-column</h1>
+    <div class="display-grid grid-template-column">
+      <div class="item">Item 01</div>
+      <div class="item">Item 02</div>
+      <div class="item">Item 03</div>
+      <div class="item">Item 04</div>
+    </div>
+
+    <h1>grid-template-rows</h1>
+    <div class="gdisplay-rid grid-template-rows">
+      <div class="item">Item 01</div>
+      <div class="item">Item 02</div>
+      <div class="item">Item 03</div>
+      <div class="item">Item 04</div>
+    </div>
+
+    <h1>grid-template-areas</h1>
+    <div class="display-grid grid-template-areas">
+      <div class="item logo">logo</div>
+      <div class="item nav">nav</div>
+      <div class="item sidebar">sidebar</div>
+      <div class="item content">content</div>
+      <div class="item advert">advert</div>
+      <div class="item footer">footer</div>
+    </div>
+
+    <h1>Grid</h1>
+    <div class="display-grid grid">
+      <div class="item">Item 01</div>
+      <div class="item">Item 02</div>
+      <div class="item">Item 03</div>
+      <div class="item">Item 04</div>
+    </div>
+
+    <h1>Grid-Column</h1>
+    <div class="display-grid grid">
+      <div class="item grid-column">Item 01</div>
+      <div class="item">Item 02</div>
+      <div class="item">Item 03</div>
+      <div class="item">Item 04</div>
+    </div>
+    <h1>Grid-Row</h1>
+    <div class="display-grid grid">
+      <div class="item grid-row">Item 01</div>
+      <div class="item grid-row">Item 02</div>
+      <div class="item">Item 03</div>
+      <div class="item">Item 04</div>
+      <div class="item">Item 04</div>
+      <div class="item">Item 04</div>
+    </div>
+  </body>
+</html>
